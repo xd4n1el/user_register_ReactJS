@@ -1,6 +1,6 @@
 # About this app:
 
- This app is about a React Front End project and also approach a basic CRUD to become a little bit more dynamic.
+ This app is about a React Front End project and also approach a basic CRUD to be a little bit more dynamic.
 
  # How it works?
 
