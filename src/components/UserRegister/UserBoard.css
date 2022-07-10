@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  box-sizing: border-box;
+}
+
+.userboard-content {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 24, 44),
+    rgb(20, 18, 33),
+    rgb(12, 11, 21),
+    rgb(8, 8, 14)
+  );
+  margin: 2px;
+  list-style: none;
+}
+
+.labels-box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 90%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.name-box {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.age-box {
+  width: 50%;
+  height: 60%;
+}
+
+.gender-box {
+  width: 50%;
+  height: 60%;
+}
+
+.userboard-content label {
+  color: white;
+  font-size: 0.8em;
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .userboard-content {
+    width: 100%;
+    height: 35%;
+    flex-wrap: wrap;
+  }
+  .labels-box {
+    width: 80%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 24, 44),
+    rgb(9, 8, 16),
+    rgb(12, 11, 21),
+    rgb(8, 8, 14)
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

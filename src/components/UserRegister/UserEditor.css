@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  font-size: 1em;
+}
+
+.edit-menu {
+  width: 10%;
+  height: 8%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    rgb(42, 41, 41),
+    rgb(36, 36, 36),
+    rgb(25, 25, 25),
+    rgb(20, 19, 19)
+  );
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+input:active,
+input:focus {
+  box-shadow: 0 0 0 0 none;
+  border: none;
+}
+
+.buttons-box div {
+  width: 100%;
+  height: 100%;
+}
+
+.edit-button {
+  width: 100%;
+  height: 100%;
+}
+
+.edit-button button {
+  background-image: url("../images/edit-button-image.png");
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: 45%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}
+
+.findUser {
+  position: absolute;
+  display: none;
+  transform: translate(-100%, 30%);
+  width: 23%;
+  max-width: 275px;
+}
+
+.search-button {
+  width: 10%;
+}
+
+.search-button button {
+  background-image: url("../images/search-button-image.png");
+}
+
+.cancel-searching-button {
+  width: 10%;
+}
+
+.cancel-searching-button button {
+  background-image: url("../images/close-button-image.png");
+}
+
+.find-input input {
+  width: 100%;
+}
+
+.editor-showcase {
+  position: absolute;
+  display: none;
+  transform: translate(-35%, -102%);
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 35%;
+  background-image: linear-gradient(
+    to right,
+    rgb(42, 41, 41),
+    rgb(36, 36, 36),
+    rgb(25, 25, 25),
+    rgb(20, 19, 19)
+  );
+}
+
+.editor-title {
+  width: 100%;
+  height: 20%;
+  word-break: break-all;
+}
+
+.editor-showcase label {
+  font-size: 1.01em;
+  color: white;
+  font-weight: bold;
+}
+
+.edit-panel-userData {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-panel-userData div {
+  margin: 10px;
+}
+
+.edit-userAge input::-webkit-outer-spin-button,
+.edit-userAge input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.edit-userGender {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.editor-showcase input {
+  height: 50%;
+  width: 70%;
+  border: none;
+  color: white;
+  margin: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(42, 41, 41),
+    rgb(36, 36, 36),
+    rgb(25, 25, 25),
+    rgb(20, 19, 19)
+  );;
+}
+
+.clear-and-done-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15%;
+  width: 95%;
+}
+
+.clear-and-done-buttons button{
+  width: 10%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.clear-button {
+  background-image: url("../images/clearinput-button-image.png");
+}
+
+.done-button {
+  background-image: url("../images/done-button-image.png");
+}
+
+.edit-iterative-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 10%;
+}
+
+.edit-iterative-buttons button {
+  width: 10%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.delete-button {
+  background-image: url("../images/delete-button-image.png");
+}
+
+.delete-button:hover {
+  background-color: rgb(13, 202, 199);
+}
+
+.close-button {
+  background-image: url("../images/close-button-image.png");
+}
+
+@media (max-width: 1200px) {
+  .editor-showcase {
+    width: 35%;
+  }
+
+  .findUser {
+    height: 4%;
+    transform: translate(-100%, 5%);
+  }
+
+  .search-button, .cancel-searching-button {
+    width: 20%;
+  }
+
+  .findUser input {
+    height: 100%;
+  }
+
+  .findUser button {
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1000px) {
+  .editor-showcase {
+    width: 40%;
+  }
+
+  .findUser {
+    height: 4%;
+    width: 50%;
+    transform: translate(-100%, 5%);
+  }
+  
+  .findUser input {
+    height: 100%;
+  }
+
+  .search-button, .cancel-searching-button {
+    width: 15%;
+  }
+
+  .findUser button {
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 700px) {
+  .editor-showcase {
+    width: 65%;
+    height: 45%;
+  }
+  
+  .findUser {
+    height: 4%;
+    width: 38%;
+    transform: translate(-100%, 5%);
+  }
+
+  .search-button, .cancel-searching-button {
+    width: 20%;
+  }
+
+  .findUser input {
+    height: 100%;
+  }
+
+  .findUser button {
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+}
