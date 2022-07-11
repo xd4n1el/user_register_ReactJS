@@ -1,12 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(
-    to right,
-    rgb(26, 24, 44),
-    rgb(9, 8, 16),
-    rgb(12, 11, 21),
-    rgb(8, 8, 14)
-  );
+  background-image: linear-gradient(to right, rgb(42, 41, 41), rgb(36, 36, 36), rgb(25, 25, 25), rgb(20, 19, 19));
   min-height: 100vh;
   display: flex;
   flex-direction: column;

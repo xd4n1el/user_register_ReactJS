@@ -1,66 +1,50 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler,
-    "Arial Narrow Bold", sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
 }
 
 .userForm-main-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(68, 68, 68), rgb(65, 65, 65));
   width: 100%;
-  background-image: linear-gradient(to right, rgb(42, 41, 41), rgb(36, 36, 36), rgb(25, 25, 25), rgb(20, 19, 19));
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  border-radius: 10px;
 }
 
 .userForm-main-content label {
-  color: white;
-  font-size: 1.2em;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .form-content {
-  width: 100%;
-  height: 30%;
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  width: 100%;
+  height: 30%;
 }
 
 .input-style {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   width: 45%;
-  transition: all 1s;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
 }
 
 .input-style input {
   width: 60%;
   height: 40%;
-  border-radius: 5px;
   border: solid 1px transparent;
-  background-color: rgb(26, 24, 44);
-  color: rgb(151, 151, 151);
+  color: black;
 }
 
 .input-style input:hover,
-input:focus {
+.input-style input:focus,
+.input-style input:out-of-range {
   box-shadow: 0 0 0 0;
   outline: 0;
   overflow: hidden;
@@ -77,11 +61,11 @@ input[type="number"] {
 }
 
 .userSelect-content {
-  width: 30%;
-  height: 20%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  width: 30%;
 }
 
 .userSelect-style {
@@ -98,27 +82,22 @@ input[type="number"] {
 }
 
 .user-buttons {
-  width: 50%;
-  max-width: 50%;
-  height: 30%;
   display: flex;
   justify-content: space-around;
+  height: 30%;
+  width: 50%;
+  max-width: 50%;
 }
 
 .user-buttons button {
-  width: 40%;
-  height: 100%;
+  background-image: linear-gradient(to right, rgb(42, 41, 41), rgb(36, 36, 36), rgb(25, 25, 25), rgb(20, 19, 19));
   border: none;
+  height: 100%;
+  width: 40%;
   border-radius: 20px;
-  color: white;
   font-size: 1em;
-  background-image: linear-gradient(
-    to right,
-    rgb(26, 24, 44),
-    rgb(20, 18, 33),
-    rgb(12, 11, 21),
-    rgb(8, 8, 14)
-  );
+  color: white;
+  word-break: break-all;
   cursor: pointer;
 }
 
@@ -128,28 +107,16 @@ input[type="number"] {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
   }
 
   .form-content {
     height: 40%;
     flex-wrap: wrap;
     justify-content: center;
-    transition: all 4s;
-    -moz-transition: all 4s;
-    -webkit-transition: all 4s;
-    -o-transition: all 4s;
   }
 
   .input-style {
     width: 100%;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
   }
 
   .input-style input {

@@ -79,8 +79,8 @@ export default function UserForm(props) {
         </select>
       </div>
       <div className="user-buttons">
-      <button onClick={clearInputs}>Limpar Campos</button>
-        <button type="submit" onClick={submitUser}>Salvar Informações</button>
+      <button onClick={clearInputs}>Limpar</button>
+        <button type="submit" onClick={submitUser}>Salvar</button>
       </div>
     </form>
   );

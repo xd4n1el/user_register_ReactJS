@@ -37,8 +37,8 @@ export default function AppUI() {
 
   function userEditHandler() {
     setUsersData((oldUsers) => {
-      return [...oldUsers]
-    })
+      return [...oldUsers];
+    });
   }
 
   return (
@@ -47,9 +47,11 @@ export default function AppUI() {
         <UserForm onSaveUserData={userDataHandler} />
       </header>
       <main className="board-content">
-        <ul>{createUserBoard(usersData)}</ul>
+        <ul>
+          <UserEditor userList={usersData} onEditUser={userEditHandler} />
+          {createUserBoard(usersData)}
+        </ul>
       </main>
-      <UserEditor userList={usersData} onEditUser={userEditHandler} />
     </div>
   );
 }
