@@ -4,7 +4,7 @@
 
  # How it works?
 
-   Is very simple, you just have to assign your data to share, then click on save button or if it is wrong just click on clear inputs.
+   Its very simple, you just have to assign your data to share, then click on save button or if it is wrong just click on clear inputs.
    Once you had put your data, on top of the board with users, will have a pen and that is your data editor. Click on there to:
    
    - Edit your current data;
